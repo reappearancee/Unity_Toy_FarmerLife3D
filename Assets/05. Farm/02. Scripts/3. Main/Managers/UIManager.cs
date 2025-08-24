@@ -46,6 +46,8 @@ public class UIManager : MonoBehaviour
         seedUI.SetActive(false);
     }
 
+ 
+
     public void ActivateFieldUI(bool isActive)
     {
         fieldUI.SetActive(isActive);

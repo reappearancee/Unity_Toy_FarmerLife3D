@@ -178,15 +178,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Farmer Life
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d985bfa4a632752458cd46c46c255e02, type: 2}
-  m_sharedMaterial: {fileID: -825275043381271625, guid: d985bfa4a632752458cd46c46c255e02, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3e58d7b66bcd146a9bad2d4b7d36823f, type: 2}
+  m_sharedMaterial: {fileID: -4864401257252123208, guid: 3e58d7b66bcd146a9bad2d4b7d36823f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278254196
+  m_fontColor: {r: 0.45677465, g: 0.9811321, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -494,9 +494,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 945744297}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 299d709c6072641979350eb8591f5ca4, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f8ac035943cca04e93bbbecd5339313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterIndex: 0
 --- !u!4 &945744299
 Transform:
   m_ObjectHideFlags: 0
@@ -607,6 +608,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1654722167}
+  - {fileID: 1575107062}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -747,6 +749,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551984229}
   m_CullTransparentMesh: 1
+--- !u!224 &1575107062 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6526892062159057045, guid: 63186655e282b364fbc4b04e2fa25499, type: 3}
+  m_PrefabInstance: {fileID: 1752693376}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1654722166
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,11 +837,39 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1365955390}
     m_Modifications:
     - target: {fileID: 3381811658995987268, guid: 63186655e282b364fbc4b04e2fa25499, type: 3}
       propertyPath: m_Name
       value: Fade
+      objectReference: {fileID: 0}
+    - target: {fileID: 3381811658995987268, guid: 63186655e282b364fbc4b04e2fa25499, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6131231900423772866, guid: 63186655e282b364fbc4b04e2fa25499, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6131231900423772866, guid: 63186655e282b364fbc4b04e2fa25499, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ef64ee42849ac4b5badde4d046753f4f, type: 3}
+    - target: {fileID: 6131231900423772866, guid: 63186655e282b364fbc4b04e2fa25499, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6131231900423772866, guid: 63186655e282b364fbc4b04e2fa25499, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6131231900423772866, guid: 63186655e282b364fbc4b04e2fa25499, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6131231900423772866, guid: 63186655e282b364fbc4b04e2fa25499, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6526892062159057045, guid: 63186655e282b364fbc4b04e2fa25499, type: 3}
       propertyPath: m_Pivot.x
@@ -886,15 +921,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6526892062159057045, guid: 63186655e282b364fbc4b04e2fa25499, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6526892062159057045, guid: 63186655e282b364fbc4b04e2fa25499, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6526892062159057045, guid: 63186655e282b364fbc4b04e2fa25499, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6526892062159057045, guid: 63186655e282b364fbc4b04e2fa25499, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1059,8 +1094,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Start
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d985bfa4a632752458cd46c46c255e02, type: 2}
-  m_sharedMaterial: {fileID: -825275043381271625, guid: d985bfa4a632752458cd46c46c255e02, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3e58d7b66bcd146a9bad2d4b7d36823f, type: 2}
+  m_sharedMaterial: {fileID: -4864401257252123208, guid: 3e58d7b66bcd146a9bad2d4b7d36823f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1145,4 +1180,3 @@ SceneRoots:
   - {fileID: 1365955390}
   - {fileID: 1833540100}
   - {fileID: 945744299}
-  - {fileID: 1752693376}
